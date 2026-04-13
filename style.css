@@ -1,27 +1,28 @@
 .controller.ps5 {
 background: url("https://raw.githubusercontent.com/pillsburyflakes/flakes-controller/main/controller.png") no-repeat center;
-background-size: 100% auto;
-width: 1000px;
-height: 500px;
+background-size: 92% auto;
+width: 807px;
+height: 651px;
 }
 
 /* Buttons */
 .controller.ps5 .button {
-opacity: 0.25;
+opacity: 0.2;
 transition: all 0.05s ease;
 }
 
 .controller.ps5 .button.pressed {
 opacity: 1;
-filter: drop-shadow(0 0 14px #ff00ff);
+filter: drop-shadow(0 0 16px #ff00ff);
 }
 
 /* Sticks */
 .controller.ps5 .stick.pressed {
-filter: drop-shadow(0 0 16px #00eaff);
+filter: drop-shadow(0 0 18px #00eaff);
 }
 
 /* Triggers */
 .controller.ps5 .trigger.pressed {
 filter: drop-shadow(0 0 12px #ff00ff);
 }
+
