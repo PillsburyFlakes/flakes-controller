@@ -1,0 +1,20 @@
+.controller.ps5 {
+background: url("controller.png") no-repeat center;
+background-size: contain;
+width: 1000px;
+height: 500px;
+}
+
+.controller.ps5 .button {
+opacity: 0.35;
+transition: all 0.05s ease;
+}
+
+.controller.ps5 .button.pressed {
+opacity: 1;
+filter: drop-shadow(0 0 10px #ff00ff);
+}
+
+.controller.ps5 .stick.pressed {
+filter: drop-shadow(0 0 12px #00eaff);
+}
