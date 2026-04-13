@@ -1,28 +1,36 @@
-.controller.ps5 {
+body {
+margin: 0;
+background: transparent;
+}
+
+/* USE YOUR CONTROLLER IMAGE */
+.controller.custom {
 background: url("https://pillsburyflakes.github.io/flakes-controller/controller.png") no-repeat center;
-background-size: 92% auto;
+background-size: contain;
 width: 807px;
 height: 651px;
 }
 
-/* Buttons */
-.controller.ps5 .button {
-opacity: 0.2;
-transition: all 0.05s ease;
+/* HIDE DEFAULT BUTTON GRAPHICS */
+.controller.custom .button,
+.controller.custom .stick,
+.controller.custom .trigger,
+.controller.custom .bumper {
+opacity: 0;
 }
 
-.controller.ps5 .button.pressed {
+/* ADD YOUR NEON EFFECTS */
+.controller.custom .button.pressed {
 opacity: 1;
-filter: drop-shadow(0 0 16px #ff00ff);
+filter: drop-shadow(0 0 18px #ff00ff);
 }
 
-/* Sticks */
-.controller.ps5 .stick.pressed {
-filter: drop-shadow(0 0 18px #00eaff);
+.controller.custom .stick.pressed {
+opacity: 1;
+filter: drop-shadow(0 0 20px #00eaff);
 }
 
-/* Triggers */
-.controller.ps5 .trigger.pressed {
-filter: drop-shadow(0 0 12px #ff00ff);
+.controller.custom .trigger.pressed {
+opacity: 1;
+filter: drop-shadow(0 0 14px #ff00ff);
 }
-
