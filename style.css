@@ -3,7 +3,7 @@ margin: 0;
 background: transparent;
 }
 
-/* USE YOUR CONTROLLER IMAGE */
+/* THIS IS THE KEY FIX */
 .controller.custom {
 background: url("https://pillsburyflakes.github.io/flakes-controller/controller.png") no-repeat center;
 background-size: contain;
@@ -11,7 +11,7 @@ width: 807px;
 height: 651px;
 }
 
-/* HIDE DEFAULT BUTTON GRAPHICS */
+/* Hide default visuals */
 .controller.custom .button,
 .controller.custom .stick,
 .controller.custom .trigger,
@@ -19,7 +19,7 @@ height: 651px;
 opacity: 0;
 }
 
-/* ADD YOUR NEON EFFECTS */
+/* Glow effects */
 .controller.custom .button.pressed {
 opacity: 1;
 filter: drop-shadow(0 0 18px #ff00ff);
