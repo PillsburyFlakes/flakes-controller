@@ -3,32 +3,44 @@ margin: 0;
 background: transparent;
 }
 
+/* Main controller */
 .controller.custom {
 background: url("https://raw.githubusercontent.com/pillsburyflakes/flakes-controller/main/controller.png") no-repeat center;
 background-size: contain;
 width: 807px;
 height: 651px;
+position: relative;
 }
 
-/* Hide default buttons */
+/* Base visibility (slight so you can see layout) */
 .controller.custom .button,
 .controller.custom .stick,
-.controller.custom .trigger {
-opacity: 0;
+.controller.custom .trigger,
+.controller.custom .bumper {
+opacity: 0.15;
+transition: all 0.05s ease;
 }
 
-/* Glow when pressed */
+/* Button presses */
 .controller.custom .button.pressed {
-opacity: 1;
+opacity: 1 !important;
 filter: drop-shadow(0 0 18px #ff00ff);
 }
 
+/* Stick movement */
 .controller.custom .stick.pressed {
-opacity: 1;
+opacity: 1 !important;
 filter: drop-shadow(0 0 20px #00eaff);
 }
 
+/* Triggers */
 .controller.custom .trigger.pressed {
-opacity: 1;
+opacity: 1 !important;
 filter: drop-shadow(0 0 14px #ff00ff);
+}
+
+/* Optional: D-pad glow */
+.controller.custom .dpad .pressed {
+opacity: 1 !important;
+filter: drop-shadow(0 0 16px #ff00ff);
 }
