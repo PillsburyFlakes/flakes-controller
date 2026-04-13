@@ -3,7 +3,6 @@ margin: 0;
 background: transparent;
 }
 
-/* THIS IS THE KEY FIX */
 .controller.custom {
 background: url("https://pillsburyflakes.github.io/flakes-controller/controller.png") no-repeat center;
 background-size: contain;
@@ -11,7 +10,6 @@ width: 807px;
 height: 651px;
 }
 
-/* Hide default visuals */
 .controller.custom .button,
 .controller.custom .stick,
 .controller.custom .trigger,
@@ -19,7 +17,6 @@ height: 651px;
 opacity: 0;
 }
 
-/* Glow effects */
 .controller.custom .button.pressed {
 opacity: 1;
 filter: drop-shadow(0 0 18px #ff00ff);
