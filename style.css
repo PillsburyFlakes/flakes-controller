@@ -5,7 +5,7 @@ background: transparent;
 
 /* CONTROLLER BASE */
 .controller.custom {
-background: url(shell.svg) no-repeat center;
+background: url(https://pillsburyflakes.github.io/flakes-controller/shell.svg) no-repeat center;
 background-size: contain;
 width: 807px;
 height: 651px;
@@ -14,7 +14,7 @@ position: relative;
 
 /* TOUCHPAD (logo layer) */
 .custom .touchpad {
-background: url(touchpad.svg) no-repeat center;
+background: url(https://pillsburyflakes.github.io/flakes-controller/touchpad.svg) no-repeat center;
 background-size: contain;
 }
 
