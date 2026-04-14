@@ -4,7 +4,7 @@ background: transparent;
 }
 
 /* CONTROLLER BASE */
-.custom.controller {
+.controller.custom {
 background: url(shell.svg) no-repeat center;
 background-size: contain;
 width: 807px;
