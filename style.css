@@ -1,46 +1,42 @@
 body {
-margin: 0;
-background: transparent;
+  margin: 0;
+  background: transparent;
 }
 
-/* Main controller */
-.controller.custom {
-background: url("https://raw.githubusercontent.com/pillsburyflakes/flakes-controller/main/controller.png") no-repeat center;
-background-size: contain;
-width: 807px;
-height: 651px;
-position: relative;
+.custom.controller {
+  background: url(shell.svg) no-repeat center;
+  background-size: contain;
+  width: 807px;
+  height: 651px;
+  position: relative;
 }
 
-/* Base visibility (slight so you can see layout) */
-.controller.custom .button,
-.controller.custom .stick,
-.controller.custom .trigger,
-.controller.custom .bumper {
-opacity: 0.15;
-transition: all 0.05s ease;
+.custom .touchpad {
+  background: url(touchpad.svg) no-repeat center;
+  background-size: contain;
 }
 
-/* Button presses */
-.controller.custom .button.pressed {
-opacity: 1 !important;
-filter: drop-shadow(0 0 18px #ff00ff);
+.custom .button,
+.custom .face,
+.custom .trigger,
+.custom .stick,
+.custom .bumper {
+  opacity: 0;
+  transition: all 0.08s ease;
 }
 
-/* Stick movement */
-.controller.custom .stick.pressed {
-opacity: 1 !important;
-filter: drop-shadow(0 0 20px #00eaff);
+.custom .button.pressed,
+.custom .face.pressed {
+  opacity: 1;
+  filter: drop-shadow(0 0 16px #ff00ff);
 }
 
-/* Triggers */
-.controller.custom .trigger.pressed {
-opacity: 1 !important;
-filter: drop-shadow(0 0 14px #ff00ff);
+.custom .stick.pressed {
+  opacity: 1;
+  filter: drop-shadow(0 0 20px #00eaff);
 }
 
-/* Optional: D-pad glow */
-.controller.custom .dpad .pressed {
-opacity: 1 !important;
-filter: drop-shadow(0 0 16px #ff00ff);
+.custom .trigger.pressed {
+  opacity: 1;
+  filter: drop-shadow(0 0 14px #ff00ff);
 }
